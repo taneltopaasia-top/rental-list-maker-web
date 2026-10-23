@@ -1,0 +1,6 @@
+.review-notice{padding:12px 24px;background:#fff6dd;border-bottom:1px solid #ddca91;font-size:12px;line-height:1.5}
+.review-notice strong,.review-notice span{display:block}
+.review-notice span{max-width:1100px}
+[data-theme="dark"] .review-notice{background:#2c291f;border-color:#514936;color:#d4cbb5}
+#refreshCatalog{display:none}
+@media(max-width:700px){.review-notice{padding:12px}}

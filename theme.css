@@ -1,0 +1,37 @@
+/* Dark theme overrides; the light theme is style.css. */
+:root[data-theme="dark"]{color-scheme:dark;--ink:#e4e7ec;--muted:#a9b0bb;--line:#343b46;background:#15191f;color:var(--ink)}
+[data-theme="dark"] body{background:#15191f;color:var(--ink)}
+[data-theme="dark"] header{background:#101318}
+[data-theme="dark"] button,[data-theme="dark"] input,[data-theme="dark"] select,[data-theme="dark"] textarea,[data-theme="dark"] dialog{background:#20262f;color:#e4e7ec;border-color:#3b4452}
+[data-theme="dark"] button:hover{background:#303947}
+[data-theme="dark"] button.primary{background:#b7cbe1;color:#142132;border-color:#b7cbe1}
+[data-theme="dark"] button.primary:hover{background:#d1deed}
+[data-theme="dark"] label,[data-theme="dark"] .product details,[data-theme="dark"] nav button,[data-theme="dark"] .line-note,[data-theme="dark"] .tools-menu,[data-theme="dark"] .row-tools{color:#b2bbc8}
+[data-theme="dark"] .project-name input{background:transparent;border-color:transparent}
+[data-theme="dark"] .search input,[data-theme="dark"] .supplier-select select,[data-theme="dark"] .sub-label select{background:#242b35;color:#e4e7ec}
+[data-theme="dark"] .group-title{background:#282f39;border-color:var(--line)}
+[data-theme="dark"] .sheet-head{background:#15191f;border-color:#657184;color:#b9c3d1}
+[data-theme="dark"] .list-line:hover,[data-theme="dark"] .qty:hover,[data-theme="dark"] .qty:focus,[data-theme="dark"] .line-note:focus{background:#242c37}
+[data-theme="dark"] .qty,[data-theme="dark"] .line-note{background:transparent}
+[data-theme="dark"] .line-note{border-left-color:var(--line)}
+[data-theme="dark"] .tools-menu>div,[data-theme="dark"] .row-tools>div{background:#20262f;border-color:#3b4452;box-shadow:0 5px 15px #0005}
+[data-theme="dark"] .row-tools summary{color:#7d8796}
+[data-theme="dark"] .row-tools[open] summary,[data-theme="dark"] .list-line:hover .row-tools summary{color:#e4e7ec}
+[data-theme="dark"] nav button{background:transparent}
+[data-theme="dark"] nav button:hover{background:#282f39}
+[data-theme="dark"] nav button.active,[data-theme="dark"] .add.added{background:#b7cbe1;color:#142132}
+[data-theme="dark"] nav button.active span{color:#32465e}
+[data-theme="dark"] .add{background:#2b3543;color:#dbe4ee}
+[data-theme="dark"] .list-selector button{background:#242b35}
+[data-theme="dark"] .list-selector button[aria-pressed=true]{background:#b7cbe1;color:#142132}
+[data-theme="dark"] .list-selector #importPdf{background:transparent;border-color:#3b4452}
+[data-theme="dark"] .list-line.last-added,[data-theme="dark"] .list-line.last-added:hover{background:#223a50}
+[data-theme="dark"] .last-added .line-note{border-left-color:#37556f}
+[data-theme="dark"] .drag-handle{color:#6f7a8a}
+[data-theme="dark"] .empty strong{color:#c3ccd9}
+[data-theme="dark"] .saved-time{color:#aeb9c8!important}
+[data-theme="dark"] .saved-row,[data-theme="dark"] .list-footer,[data-theme="dark"] .catalog,[data-theme="dark"] .project,[data-theme="dark"] .preset-table th,[data-theme="dark"] .preset-table td,[data-theme="dark"] .project-notes textarea{border-color:var(--line)}
+[data-theme="dark"] .count,[data-theme="dark"] .product-category,[data-theme="dark"] .product summary,[data-theme="dark"] .catalog-footer,[data-theme="dark"] .list-toolbar,[data-theme="dark"] .list-footer span,[data-theme="dark"] .app-footer,[data-theme="dark"] .results-heading span{color:#9faaba}
+[data-theme="dark"] #toast{background:#e4e7ec;color:#15191f}
+[data-theme="dark"] ::placeholder{color:#909caf}
+[data-theme="dark"] :focus-visible{outline-color:#a9c6e6}
