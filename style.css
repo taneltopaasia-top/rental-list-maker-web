@@ -11,7 +11,6 @@
 .preset-table th,.preset-table td{padding:8px;border-bottom:1px solid #ddd;text-align:left;vertical-align:top;overflow-wrap:anywhere}
 .preset-table th{font-size:10px;text-transform:uppercase;letter-spacing:.4px;color:#888;font-weight:400}
 .preset-table .preset-group td{background:#f3f3f3;font-weight:500}
-[data-theme="dark"] .preset-table .preset-group td{background:#282f39}
 .preset-notes,.preset-table td{white-space:pre-wrap}
 /* Quantity steppers and delete button on list rows */
 .sheet-head,.list-line{grid-template-columns:20px 92px minmax(0,1.6fr) minmax(60px,1fr) 24px 30px}
@@ -23,7 +22,5 @@
 .remove-line:hover{background:#c62828;color:#fff;border-color:#c62828}
 @media(max-width:1050px){.sheet-head,.list-line{grid-template-columns:18px 84px minmax(0,1.5fr) minmax(55px,1fr) 20px 28px}.qty-control .qty{width:28px}.qty-step{width:22px}}
 @media(max-width:760px){.sheet-head,.list-line{grid-template-columns:18px 88px minmax(0,1.5fr) minmax(50px,1fr) 22px 30px}}
-[data-theme="dark"] .qty-step{background:#20262f;border-color:#3b4452;color:#e4e7ec}
-[data-theme="dark"] .remove-line{background:#3a1f22;border-color:#7a3238;color:#ff8a8a}
-[data-theme="dark"] .remove-line:hover{background:#c62828;color:#fff}
 
+@media(hover:none){kbd{display:none}}

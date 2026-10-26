@@ -1,7 +1,7 @@
-/* Erne brand colors: cream and black. Light = cream page with black text; dark = black page with cream text.
+/* Erne brand colors. Light = warm white page with black text; dark = black page with cream text.
    The header is a black bar in both; the accent (primary buttons, active category and list tab, added items) is the opposite of the page.
    Loaded after style.css, so these rules replace its neutral greys. */
-:root{color-scheme:light;--bg:#e3dcd3;--surface:#f1ece6;--surface-2:#d8cfc4;--hover:#d2c8bb;--ink:#141414;--muted:#57514a;--line:#c9bfb2;--line-strong:#141414;--accent:#141414;--accent-hover:#36332f;--accent-line:#141414;--on-accent:#e3dcd3;--on-accent-muted:#a8a196;--highlight:#cec4b6;--focus:#141414;--shadow:#0002;--header-bg:#0b0c0e;--header-ink:#e3dcd3;--header-muted:#a8a196;--header-line:#e3dcd340}
+:root{color-scheme:light;--bg:#f8f7f5;--surface:#efedea;--surface-2:#e9e6e1;--hover:#e2ded8;--ink:#111111;--muted:#5c5750;--line:#dcd8d1;--line-strong:#111111;--accent:#111111;--accent-hover:#36332f;--accent-line:#111111;--on-accent:#f8f7f5;--on-accent-muted:#a8a196;--highlight:#e6e1d9;--focus:#111111;--shadow:#0002;--header-bg:#0b0c0e;--header-ink:#f8f7f5;--header-muted:#a8a196;--header-line:#f8f7f540}
 :root[data-theme="dark"]{color-scheme:dark;--bg:#0b0c0e;--surface:#18181a;--surface-2:#222120;--hover:#2d2b28;--ink:#e3dcd3;--muted:#a8a196;--line:#2e2d2b;--line-strong:#8a847b;--accent:#e3dcd3;--accent-hover:#f1ece6;--accent-line:#e3dcd3;--on-accent:#0b0c0e;--on-accent-muted:#4a463f;--highlight:#2e2b26;--focus:#e3dcd3;--shadow:#0009;--header-bg:#000;--header-ink:#e3dcd3;--header-muted:#a8a196;--header-line:#e3dcd333}
 :root{background:var(--bg);color:var(--ink)}
 body{background:var(--bg);color:var(--ink)}
