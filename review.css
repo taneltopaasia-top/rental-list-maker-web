@@ -1,5 +1,0 @@
-.review-notice{padding:12px 24px;background:var(--surface-2);color:var(--ink);border-bottom:1px solid var(--line);font-size:12px;line-height:1.5}
-.review-notice strong,.review-notice span{display:block}
-.review-notice span{max-width:1100px}
-#refreshCatalog{display:none}
-@media(max-width:700px){.review-notice{padding:12px}}

@@ -1,5 +1,5 @@
 'use strict';
-// Browser PDF export for the review demo; mirrors pdf_export.py (A4, grouped Qty / Equipment / Notes).
+// Browser PDF export for the web version; mirrors pdf_export.py (A4, grouped Qty / Equipment / Notes).
 function renderRentalPdf(data,spacers){
   const {jsPDF}=window.jspdf,doc=new jsPDF({unit:'pt',format:'a4'});
   doc.addFileToVFS('RentalSans.ttf',window.rentalPdfFont);doc.addFont('RentalSans.ttf','RentalSans','normal');doc.setFont('RentalSans');

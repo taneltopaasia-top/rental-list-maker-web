@@ -1,8 +1,8 @@
 'use strict';
-// Browser-only replacement for the local server API, used by the public review demo.
+// Browser-only replacement for the local server API, used by the public web version.
 // app.js is unchanged: its /api/* requests are answered here from catalog.json and localStorage.
 (function(){
-  const LISTS_KEY='rental-maker-review-lists-v2';
+  const LISTS_KEY='rental-maker-review-lists-v2'; // Old name kept so visitors' saved lists still load.
   const json=(body,status=200)=>new Response(JSON.stringify(body),{status,headers:{'Content-Type':'application/json'}});
   const fail=message=>json({error:message},400);
   let catalogCache=null;
@@ -47,7 +47,7 @@
     return [...groups.values()].sort((a,b)=>(a[0].list_type<b[0].list_type?-1:a[0].list_type>b[0].list_type?1:0)||categoryRank(a[0])-categoryRank(b[0])).flat();
   }
   function base64ToBytes(s){const bin=atob(s);return Uint8Array.from(bin,c=>c.charCodeAt(0));}
-  // Reads the editable list embedded by this demo (V2) or by the earlier review demo (V1).
+  // Reads the editable list embedded by this version (V2) or by the earlier web version (V1).
   async function importPdf(b64){
     let bytes;try{bytes=base64ToBytes(b64);}catch{throw Error('Invalid PDF upload');}
     if(bytes.length>3000000||new TextDecoder('latin1').decode(bytes.slice(0,4))!=='%PDF')throw Error('Choose a PDF under 3 MB');
@@ -64,7 +64,7 @@
   }
   async function handle(path,method,body){
     if(path==='/api/catalog')return json(await loadCatalog());
-    if(path==='/api/refresh')return method==='GET'?json({running:false,message:''}):fail('Catalog refresh is not available in the review demo');
+    if(path==='/api/refresh')return method==='GET'?json({running:false,message:''}):fail('Catalog refresh is not available in the web version');
     if(path==='/api/lists'&&method==='GET')return json(readLists());
     const data=body?JSON.parse(body):{};
     if(path==='/api/lists'){const checked=await validateList(data);checked.updated_at=new Date().toISOString();writeLists([checked,...readLists().filter(l=>l.id!==checked.id)]);return json(checked);}
